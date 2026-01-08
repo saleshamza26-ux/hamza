@@ -1,0 +1,167 @@
+
+        body{
+        padding-top: 90px;
+        }
+    /* Navbar */
+    .navbar{
+        background-color: black;
+    }
+
+    /* Logo sizes */
+    .logo-nav{
+        height: 70px;
+        margin-right: 10px;
+    }
+
+    .logo-footer{
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    /* Footer */
+    .footer{
+        background-color: black;
+        color: #ffffff;
+        padding: 40px 0 20px;
+        width: 100%;
+    }
+
+    .footer h5{
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+
+    .footer a{
+        color: #ffffff;
+        text-decoration: none;
+        display: block;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+
+    .footer a:hover{
+        text-decoration: underline;
+    }
+
+    .footer-bottom{
+        border-top: 1px solid rgba(255,255,255,0.3);
+        margin-top: 20px;
+        padding-top: 15px;
+        font-size: 14px;
+        text-align: center;
+    }
+.animated-card {
+  transition: all 0.4s ease;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.animated-card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Card image size control */
+.card-img-top {
+  height: 200px;          /* average bootstrap card image height */
+  object-fit: contain;   /* image cut nahi hogi, fit ho jayegi */
+  padding: 10px;
+  background: #f8f9fa;   /* light bg for product images */
+}
+
+/* Card overall look */
+.card {
+  border-radius: 12px;
+  transition: all 0.4s ease;
+}
+
+/* Hover animation (already use kar rahe ho) */
+.animated-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Card body spacing */
+.card-body {
+  padding: 15px;
+  display: flex;
+    flex-direction: column;
+}
+
+/* Title control */
+.card-title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.card-text {
+    flex-grow: 1;
+}
+.card-body .btn{
+    margin-top: auto;
+}
+@media (max-width: 991px) {
+    .navbar-collapse {
+        /* display: flex; */
+        justify-content: center; 
+        text-align: center; 
+    }
+    
+.navbar-toggler-icon {
+    
+    border: 2px ; 
+    position: relative;
+    width: 30px;
+    height: 25px;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after,
+.navbar-toggler-icon span {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.navbar-toggler-icon::before {
+    top: 0;
+}
+
+.navbar-toggler-icon span {
+    top: 10px;
+}
+
+.navbar-toggler-icon::after {
+    bottom: 0;
+}
+
+    .navbar-nav {
+        flex-direction: column; 
+    }
+
+    .nav-item {
+        margin: 5px 100; 
+    }
+    .footer .container {
+        text-align: center; 
+    }
+    .footer .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer .col-md-4 {
+        margin-bottom: 20px; 
+    }
+}
